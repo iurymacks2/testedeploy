@@ -29,4 +29,4 @@ jobs:
           host: "161.35.125.23"
           username: root
           password: aTlas00z
-          script: npm i | pm2 start /usr/share/nginx/html/app.js
+          script: cd /usr/share/nginx/html | npm i | pm2 start /usr/share/nginx/html/app.js
