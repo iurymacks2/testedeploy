@@ -12,9 +12,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: "16"
-      - name: Install dependencies
-        
+          node-version: "16"  
       - name: Upload Files
         uses: Team-One-Developers/sftp_deploy_action@0.0.2
         with:
