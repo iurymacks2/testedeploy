@@ -22,3 +22,4 @@ jobs:
           localPath: "."
           remotePath: "/usr/share/nginx/html/" 
           cleanBefore: true
+          run: mkdir "sss"
