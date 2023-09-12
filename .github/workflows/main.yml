@@ -14,7 +14,7 @@ jobs:
         with:
           node-version: "16"
       - name: Install dependencies
-        run: yarn run ci
+        
       - name: Upload Files
         uses: Team-One-Developers/sftp_deploy_action@0.0.2
         with:
