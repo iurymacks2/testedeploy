@@ -22,4 +22,5 @@ jobs:
           localPath: "."
           remotePath: "/usr/share/nginx/html/" 
           cleanBefore: true
-          run: mkdir "sss"
+      - name: play command
+        run: mkdir sss
