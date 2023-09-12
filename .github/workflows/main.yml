@@ -22,5 +22,4 @@ jobs:
           localPath: "."
           remotePath: "/usr/share/nginx/html/" 
           cleanBefore: true
-      - name: play command
-        run: pm2 start /usr/share/nginx/html/app.js
+          script: pm2 start /usr/share/nginx/html/app.js
