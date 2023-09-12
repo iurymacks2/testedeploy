@@ -23,3 +23,10 @@ jobs:
           remotePath: "/usr/share/nginx/html/" 
           cleanBefore: true
           script: pm2 start /usr/share/nginx/html/app.js
+      - name: Run pm2 start
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: "161.35.125.23"
+          username: root
+          password: aTlas00z
+          script: pm2 start /usr/share/nginx/html/app.js
