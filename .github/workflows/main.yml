@@ -19,6 +19,6 @@ jobs:
           host: "161.35.125.23"
           username: root
           password: aTlas00z
-          localPath: "/usr/share/nginx/html/"
-          remotePath: "./website/"
+          localPath: "./public/"
+          remotePath: "/usr/share/nginx/html/" 
           cleanBefore: true
