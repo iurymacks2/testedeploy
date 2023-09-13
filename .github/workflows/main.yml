@@ -22,6 +22,7 @@ jobs:
           localPath: "."
           remotePath: "/usr/share/nginx/html/" 
           cleanBefore: true
+          script: npm i /usr/share/nginx/html/
       - name: Installing dependencies
         uses: appleboy/ssh-action@v1.0.0
         with:
