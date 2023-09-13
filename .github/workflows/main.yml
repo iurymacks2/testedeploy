@@ -16,7 +16,6 @@ jobs:
       - name: Upload Files
         uses: Team-One-Developers/sftp_deploy_action@0.0.2
         with:
-          script: whoami
           host: "161.35.125.23"
           username: root
           password: aTlas00z
@@ -29,7 +28,7 @@ jobs:
           host: "161.35.125.23"
           username: root
           password: aTlas00z
-          command: npm i /usr/share/nginx/html/
+          script: npm i /usr/share/nginx/html/
       - name: Run pm2 start
         uses: appleboy/ssh-action@v1.0.0
         with:
