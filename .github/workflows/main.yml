@@ -21,6 +21,7 @@ jobs:
           password: aTlas00z
           localPath: "."
           remotePath: "/usr/share/nginx/html/"
+          script: pwd
           cleanBefore: true
       - name: Installing dependencies
         uses: appleboy/ssh-action@v1.0.0
