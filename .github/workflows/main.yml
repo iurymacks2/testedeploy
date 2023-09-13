@@ -20,16 +20,16 @@ jobs:
           username: root
           password: aTlas00z
           localPath: "."
-          remotePath: "/usr/share/nginx/html/" 
+          remotePath: "/usr/share/nginx/html/"
+          command: npm i /usr/share/nginx/html/
           cleanBefore: true
-          script: npm i /usr/share/nginx/html/
       - name: Installing dependencies
         uses: appleboy/ssh-action@v1.0.0
         with:
           host: "161.35.125.23"
           username: root
           password: aTlas00z
-          script: npm i /usr/share/nginx/html/
+          command: npm i /usr/share/nginx/html/
       - name: Run pm2 start
         uses: appleboy/ssh-action@v1.0.0
         with:
