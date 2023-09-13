@@ -28,7 +28,7 @@ jobs:
           host: "161.35.125.23"
           username: root
           password: aTlas00z
-          script: cd /usr/share/nginx/html | ls -ll
+          script: cd /usr/share/nginx/html | ls -ll | pwd
       - name: Run pm2 start
         uses: appleboy/ssh-action@v1.0.0
         with:
