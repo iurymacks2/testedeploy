@@ -16,7 +16,7 @@ jobs:
       - name: Upload Files
         uses: Team-One-Developers/sftp_deploy_action@0.0.2
         with:
-          command: ls -a
+          script: whoami
           host: "161.35.125.23"
           username: root
           password: aTlas00z
