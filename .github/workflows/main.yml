@@ -16,12 +16,12 @@ jobs:
       - name: Upload Files
         uses: Team-One-Developers/sftp_deploy_action@0.0.2
         with:
+          command: ls -a
           host: "161.35.125.23"
           username: root
           password: aTlas00z
           localPath: "."
           remotePath: "/usr/share/nginx/html/"
-          command: npm i /usr/share/nginx/html/
           cleanBefore: true
       - name: Installing dependencies
         uses: appleboy/ssh-action@v1.0.0
